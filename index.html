@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO HTML</title>
+    <link rel="stylesheet" href="formulario.css">
+    </head>
+
+<body>
+
+    <h1>CADASTRO DE DESENVOLVEDORES</h1><br>
+
+    <form>
+        <fieldset>
+
+            <p>COMPLETE AS SUAS INFORMAÇÕES</p>
+
+            <label for="nome-completo">Nome Completo</label>
+            <input type="text" name="nome-completo" id="nome-completo" placeholder="Caleb de Ramos"><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min="18" value="18"><br>
+
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" name="data-nascimento"><br>
+
+            <label for="e-mail">E-mail:</label>
+            <input type="e-mail" name="e-mail" id="e-mail" placeholder="@"><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(42) 9 9456-3456"><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Curitiba">
+
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="" disabled selected>- Selecione -</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="Paraná">Paraná</option>
+            </select>
+
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+
+            <p>HABILIDADES</p>
+
+            <section id="frente-atuacao"><br>
+                <label for="">Qual a sua frente de atuação?</label><br>
+                
+                <input type="radio" name="devWeb" id="front" value="Front-End">
+                <label for="front">Front-End</label><br>
+
+                <input type="radio" name="devWeb" id="back" value="Back-End"> 
+                <label for="back">Back-End</label><br>
+
+                <input type="radio" name="devWeb" id="fullstack" value="Full Stack"> 
+                <label for="fullstack">Full Stack</label><br>
+            </section>
+            
+            <br>
+            <section id="nivel-senioridade">
+                <label for="senioridade">Nivel Senioridade:</label>
+                <select name="senioridade" id="senioridade">
+                    <option value="" disabled selected>- Selecione -</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </section>
+
+            <section>
+                <br>
+                <input type="checkbox" name="JAVASCRIPT" class="tecnologia" value="JAVASCRIPT" checked>
+                <label for="JAVASCRIPT">JAVASCRIPT</label><br>
+                
+                <input type="checkbox" name="HTML" class="tecnologia" value="HTML" checked>
+                <label for="HTML">HTML</label><br>
+
+                <input type="checkbox" name="CSS" class="tecnologia" value="CSS" checked>
+                <label for="CSS">CSS</label><br>
+
+                <input type="checkbox" name="PYTHON" class="tecnologia" value="PYTHON" checked>
+                <label for="PYTHON">PYTHON</label><br>
+
+                <input type="checkbox" name="C#" class="tecnologia" value="C#" checked>
+                <label for="C#">C#</label><br>
+            </section>
+
+            <br>
+            <section id="resumo">
+                <label for="descricao">Descreva um pouco sobre você:</label><br>
+                <textarea name="descricao" cols="30" rows="10" placeholder="Digite aqui..."></textarea><br>
+            </section>
+
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <p>CURRÍCULO</p>
+            <label for="anexo">ANEXE O CURRÍCULO</label><br>
+            <input type="file" name="anexo"><br><br>
+
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="Limpar Dados">
+            
+        </fieldset>
+    </form>
+  
+</body>
+</html>

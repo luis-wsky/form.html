@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(227, 220, 220);
+}
+h1{
+    background-color: darkcyan;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+    text-align: center;
+    margin: 25px;
+    padding: 25px;
+}
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 2px;
+    padding: 1px;
+}
